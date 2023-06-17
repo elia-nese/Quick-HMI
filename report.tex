@@ -1,12 +1,15 @@
 \documentclass[
     iai, % Saisir le nom de l'institut rattaché
     eai, % Saisir le nom de l'orientation
-    confidential, % Décommentez si le travail est confidentiel
+     % Décommentez si le travail est confidentiel
 ]{heig-tb}
 
 \usepackage[nooldvoltagedirection,european,americaninductors]{circuitikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[table,xcdraw]{xcolor}
 
-\signature{mbernasconi.svg} % Remplacer par votre propre signature vectorielle.
+\signature{elianese.svg} % Remplacer par votre propre signature vectorielle.
 
 \makenomenclature
 \makenoidxglossaries
@@ -57,7 +60,15 @@
 \mainmatter
 \chapter{Introduction}
 \input{introduction.tex}
-\input{examples.tex}
+
+\chapter{Pré-étude}
+\input{Pre_etude.tex}
+
+\chapter{Développement}
+\input{Developpement.tex}
+
+\chapter{Planification}
+\input{Planification.tex}
 
 \chapter{Conclusion}
 \input{conclusion.tex}
